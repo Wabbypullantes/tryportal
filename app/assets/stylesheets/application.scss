@@ -1,0 +1,161 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+body
+{
+  height: 100%;
+  position: relative;
+  font-family: 'lora', serif;
+<<<<<<< HEAD
+=======
+    background: url('trybg4.jpg')  no-repeat center top #FFF;
+>>>>>>> 907b49f57350d555ff719ec8ff7f91a9e267766c
+
+}
+
+
+.login-panel
+{
+  text-align: center;
+  font-family: 'lora', serif ;
+}
+
+.container
+{
+
+
+
+}
+
+.banner
+{
+  background-color: #5f5f5f;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  padding: 3px;
+ 
+  .toright
+  {
+    float:right;
+    color:white;
+  }
+  
+}
+
+
+.header
+{
+  background-color: #000080;
+  width: 100%;
+  height: 123px;
+  text-align: left;
+  font-size: 30px;
+  font-family: serif;
+  color:white;
+
+  .search-field
+  {
+    color:black;
+    float:right;
+    padding: 6px;
+    margin:8px 0;
+    box-sizing: border-box;
+  }
+}
+
+
+.container
+{
+  position:relative;
+}
+
+.container1
+{
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.navbar-default
+{
+	background-color: #ff8c1a;
+	letter-spacing: 1.4px;
+  .navbar-brand
+  {
+    color: white;
+  }
+}
+
+.navbar-brand
+{
+  color: white;
+}
+
+.navbar-signout
+{
+  padding: 15px;
+  color: white;
+  letter-spacing: 1.4px;
+}
+
+.search-container
+{
+  align-content: right;
+}
+
+
+.wrap
+{
+  width: 100% ;
+  height: 700px;
+}
+
+a.text-people
+{
+  font-size: 50px;
+}
+
+.navbar-bottom
+{
+  background-color: grey;
+  margin-bottom: 0;
+  height: 100px;
+}
+
+.wrap-bottom
+{
+  min-height: 100%;
+  height:auto;
+  height:100%;
+}
+
+<<<<<<< HEAD
+=======
+
+
+.footer 
+{
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   
+   background:#6cf;
+}
+>>>>>>> 907b49f57350d555ff719ec8ff7f91a9e267766c

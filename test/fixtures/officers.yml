@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  president: MyString
+  internalvp: MyString
+  externalvp: MyString
+  secretary: MyString
+  treasurer: MyString
+  auditor: MyString
+  pio: MyString
+  fourthrep: MyText
+  thirdrep: MyText
+  secondrep: MyText
+  vpgroup: MyString
+  undersec: MyString
+  coh: MyString
+  undersec2: MyString
+  fgh: MyString
+  undersec3: MyString
+  moderator: MyString
+
+two:
+  president: MyString
+  internalvp: MyString
+  externalvp: MyString
+  secretary: MyString
+  treasurer: MyString
+  auditor: MyString
+  pio: MyString
+  fourthrep: MyText
+  thirdrep: MyText
+  secondrep: MyText
+  vpgroup: MyString
+  undersec: MyString
+  coh: MyString
+  undersec2: MyString
+  fgh: MyString
+  undersec3: MyString
+  moderator: MyString

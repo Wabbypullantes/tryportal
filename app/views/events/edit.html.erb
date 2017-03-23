@@ -1,0 +1,23 @@
+<h1> Edit</h1>
+
+<%= form_for(:event) do |f| %>
+
+<%= f.label "Event Title" %> <br>
+<%= f.text_area :event_name %><br>
+
+<%= f.label "Description" %><br>
+<%= f.text_area :event_description %><br>
+
+<%= f.label "Date" %><br>
+<%= f.date_select :event_date %><br>
+
+<%= f.label "Venue" %><br>
+<%= f.text_area :event_venue %><br>
+
+<%= f.label "Poster" %><br>
+<%= f.file_field :event_img %><br>
+
+
+  <%= f.submit "Update Event" %><br>
+  <%= link_to "Back", event_index_path %>
+  <% end %>

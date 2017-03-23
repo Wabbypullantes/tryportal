@@ -1,0 +1,28 @@
+<div class = "row" >
+
+  <div class = "col-md-4">
+  <%= image_tag @event.event_img.url(:event_show), class: "event-show" %>
+
+</div>
+
+  <div class = "col-md-8" >
+    <h3> Event name </h3>
+    <%= @event.event_name %> <br>
+    <h3> Author </h3>
+    <%= @event.event_date %> <br>
+    <h3> Contributor/s </h3>
+    <%= @event.event_venue %> <br>
+    <h3> Description </h3>
+    <%= @event.event_description %> <br>
+
+
+  </div>
+</div>
+<a class="btn btn-default" href = "/event/index" role = "button" > Back  </a>
+
+<% if @event.user == current_user %>
+
+  <a class="btn btn-default" href = "/event/<%= @event.id %>/edit" role = "button" > Edit  </a>
+  <a class="btn btn-default" href = "/event/<%= @event.id %>/destroy" role = "button" > Delete 
+  </a>
+<% end %>

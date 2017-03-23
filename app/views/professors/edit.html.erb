@@ -1,0 +1,15 @@
+<h1> Edit </h1>
+
+<%= form_for(:professor) do |f|  %>
+  <%= f.label :"Name"  %> <br>
+  <%= f.text_field :name %><br>
+
+  <%= f.label :"Position" %><br>
+  <%= f.text_field :position %><br>
+
+  <%= f.label :"Educational Attainment" %><br>
+  <%= f.text_area :educ_attainment %><br>
+
+  <%= f.submit "Update Professor" %>
+
+  <% end %>

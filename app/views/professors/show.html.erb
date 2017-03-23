@@ -1,0 +1,13 @@
+
+<%= @professor.name %> <br>
+<%= @professor.position %> <br>
+<%= @professor.educ_attainment %> <br>
+<br>
+<br>
+
+<%= link_to "Back" , professor_index_path %>
+
+<% if @professor.user_id == current_user %>
+<%= link_to "Edit" , "/professor/#{@professor.id}/edit" %>
+<%= link_to "Delete" , "/professor/#{@professor.id}/destroy" %>
+<% end %>

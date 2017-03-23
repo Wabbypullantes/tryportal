@@ -1,0 +1,28 @@
+
+<p class = "event-head"> Search Results for "<%= @key %>"</p>
+<div class = "search-container">
+
+
+<h3> Event: </h3><br>
+<% @search.each do |x| %>
+   <a href = "/event/<%= x.id%>" > <%= x.event_name %> </a><br>
+<% end %>
+
+<h3>Research:</h3><br>
+<% @researches.each do |x| %>
+ <a href="/research/<%= x.id%>" > <%= x.title %> </a> <br>
+<% end %>
+
+<h3> Professor:</h3>
+<% @professors.each do |x| %>
+      <a href="/professor/<%= x.id %>" > <%= x.name %></a> - <%= x.position %> <br>
+    <% end %>
+
+<h3>Subject: </h3> <br>
+<% @subjects.each do |x| %>
+    <a href = "/subject/<%= x.id %>" /> <%= x.subject_title  %></a> <br>
+  
+  
+<% end %>
+
+</div>

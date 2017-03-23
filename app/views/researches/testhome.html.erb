@@ -1,0 +1,25 @@
+<h3> Research topics </h3>
+
+<div class = "row" >
+
+  <% @researches.each do |x| %>
+      <div class = "col-md-3" >
+          <a href="/research/<%= x.id%>" > <%= image_tag x.research_img.url(:research_index), class: "research" %> </a> <br>
+      </div>
+  <% end %>
+
+</div>
+
+<div class = "row" >
+
+  <% @researches.each do |x| %>
+      <div class = "col-md-3" >
+          <a href="/research/<%= x.id%>" > <%= image_tag x.research_img.url(:research_index), class: "research" %> </a> <br>
+      </div>
+  <% end %>
+
+</div>
+
+<% if current_user.presence %>
+  <a class="btn btn-default" href = "/research/new" role = "button"> Insert Research </a>
+<% end %>

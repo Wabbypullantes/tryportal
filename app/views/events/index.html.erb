@@ -1,0 +1,29 @@
+
+
+<div class = "see-event"> 
+<a href="/event/eventlist" class = "btn btn-primary btn-lg" role = "button"> See more Events . . </a>
+</div>  
+
+
+<div class = "row" >
+
+  <% @events.each do |x| %>
+      <div class = "col-md-3" >
+        <div class = "event-title-header" >
+          <a href = "/event/<%= x.id%>" > <%= x.event_name %> </a><br>
+          <span> <%= x.event_date.strftime("%B %d, %Y") %></span>
+        </div>
+          <a href="/event/<%= x.id%>" > <%= image_tag x.event_img.url(:event_index), class: "event_img" %> </a> <br>
+
+      </div>
+  <% end %>
+
+</div>
+
+
+<br>
+<br>
+<br>
+<% if current_user == 1 %>
+  <%= link_to "Insert Event" , event_new_path %>
+<% end %>

@@ -1,0 +1,22 @@
+<h2> Update Section </h2>
+
+<%= form_for (:about) do |f| %>
+  <%= f.label :mission %> <br>
+  <%= f.text_area :mission , :rows => 10, style: 'width:80%;' %><br>
+
+
+  <%= f.label :vision %><br>
+  <%= f.text_area :vision  , :rows => 10, style: 'width:80%;' %><br>
+
+  <%= f.label :history %><br>
+  <%= f.text_area :his  , :rows => 10, style: 'width:80%;' %><br>
+
+
+  <%= f.label :Banner %>
+  <%= f.file_field :about_img %> <br>
+
+  <%= f.submit "Update" %>
+
+  <% end %>
+
+  <%= link_to "Back", about_index_path %>

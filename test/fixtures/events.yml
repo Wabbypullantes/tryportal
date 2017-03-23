@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_name: MyString
+  event_description: MyString
+  event_date: 2017-03-15
+  event_venue: MyString
+
+two:
+  event_name: MyString
+  event_description: MyString
+  event_date: 2017-03-15
+  event_venue: MyString

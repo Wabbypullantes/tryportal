@@ -1,0 +1,14 @@
+<h3> <%= @subject.subject_code %> </h3>
+<h4> <%= @subject.subject_title %></h4>
+Units: <%= @subject.units %> <br><br>
+<h5> Course Description: </h5>
+<%= @subject.course_description %>
+
+<br>
+<a href="/subject/index" class="btn btn-primary" role="button"> Back </a>
+
+<% if current_user != 1 %>
+	<a class="btn btn-primary" href = "/subject/<%= @subject.id %>/edit" role = "button" > Edit  </a>
+	<a class="btn btn-primary" href = "/subject/<%= @subject.id %>/destroy" role = "button" > Delete  
+	</a>
+<% end %>

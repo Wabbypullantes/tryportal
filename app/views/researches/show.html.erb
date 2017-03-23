@@ -1,0 +1,33 @@
+<div class = "row" >
+
+  <div class = "col-md-4">
+  <%= image_tag @research.research_img.url(:research_show), class: "research-show" %>
+
+</div>
+
+  <div class = "col-md-8" >
+    <h3> Title </h3>
+    <%= @research.title %> <br>
+    <h3> Author </h3>
+    <%= @research.author %> <br>
+    <h3> Contributor/s </h3>
+    <%= @research.contributor %> <br>
+    <h3> Description </h3>
+    <%= @research.description %> <br>
+    <h3> Call Number </h3>
+    <%= @research.callNo %> <br>
+    <h4> Year Published </h4>
+    <%= @research.year %> <br>
+    <h5> Posted by </h5>
+    <%= @research.user.email %>
+
+  </div>
+</div>
+<a class="btn btn-default" href = "/research/index" role = "button" > Back  </a>
+
+<% if @research.user == current_user %>
+
+  <a class="btn btn-default" href = "/research/<%= @research.id %>/edit" role = "button" > Edit  </a>
+  <a class="btn btn-default" href = "/research/<%= @research.id %>/destroy" role = "button" > Delete 
+  </a>
+<% end %>

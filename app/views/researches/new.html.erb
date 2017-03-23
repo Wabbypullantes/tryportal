@@ -1,0 +1,38 @@
+<div class="tocenter">
+<h1> Insert a Research </h1>
+
+<%= form_for(:research) do |f| %>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %>
+  <br>
+  <%= f.label :author %><br>
+  <%= f.text_area :author %>
+  <br>
+  <%= f.label :contributors %><br>
+  <%= f.text_area :contributor %>
+  <br>
+  <%= f.label :description %><br>
+  <%= f.text_area :description %>
+  <br>
+  <%= f.label :"Call Number" %><br>
+  <%= f.text_field :callNo %>
+  <br>
+  <%= f.label :"Year published" %><br>
+  <%= f.text_field :year %>
+  <br>
+
+  <%= f.label :Image %>
+  <%= f.file_field :research_img, class: "tocenter" %>
+  <br>
+
+
+
+  <br>
+
+</div>
+
+
+ 
+ <a class="btn btn-default" href = "/research/index" role = "button"> Back </a>
+  <%= f.submit "Insert a Research",  class: "btn btn-default" %>
+  <% end %>

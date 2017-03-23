@@ -1,0 +1,75 @@
+
+
+
+<div class = "officer-show">
+	
+	<p class = "apsa-header" > Association of Psychology Students of Ateneo </p>
+	<p class = "schoolyr" > Officers of year <%= Time.current.year %> </p>
+	<br>
+	<strong> President: </strong>
+	<%= @officer.president %>
+	<br>
+	<strong> Internal Vice President: </strong>
+	<%= @officer.internalvp %>
+	<br>
+	<strong> External Vice President: </strong>
+	<%= @officer.externalvp %>
+	<br>
+	<strong> Secretary: </strong>
+	<%= @officer.secretary %>
+	<br>
+	<strong> Treasurer: </strong>
+	<%= @officer.treasurer %>
+	<br>
+	<strong> Auditor: </strong>
+	<%= @officer.auditor %>
+	<br>
+	<strong> Public Information Officer: </strong>
+	<%= @officer.pio %>
+	<br>
+	<strong> Fourth year Representatives: </strong>
+	<%= @officer.fourthrep %>
+	<br>
+	<strong> Third year Representatives: </strong>
+	<%= @officer.thirdrep %>
+	<br>
+	<strong> Second year Representatives: </strong>
+	<%= @officer.secondrep %>
+	<br>
+	<h4> APSA Groups </h4>
+	<br>
+	<strong> Vice President for groups: </strong>
+	<%= @officer.vpgroup %>
+	<br>
+	<strong> Undersecretary: </strong>
+	<%= @officer.undersec %>
+	<br>
+	<strong> Comitee on Outreach Head: </strong>
+	<%= @officer.coh %>
+	<br>
+	<strong> Undersecretary: </strong>
+	<%= @officer.undersec2 %>
+	<br>
+	<strong> Facilitator's Group Head: </strong>
+	<%= @officer.fgh %>
+	<br>
+	<strong> Undersecretary: </strong>
+	<%= @officer.undersec3 %>
+	<br>
+	<br>
+	<br>
+
+
+	
+	<%= @officer.moderator %>
+	<p class = "moderator" > Moderator </p>
+	<br>
+	<br>
+</div>
+<%= link_to "Back" , officer_index_path %>
+
+<% if @officer.user_id == current_user %>
+  <%= link_to "Update Officers", "/officer/#{@officer.id}/edit" %>
+<% end %>
+
+  
